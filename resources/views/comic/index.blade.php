@@ -6,6 +6,12 @@
 
   <div class="container">
 
+    <h1>Comic List</h1>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-5">
+      <a href="{{route('comic.create')}}" class="btn btn-outline-info">Add you comic</a>
+    </div>
+
     <table class="table">
       <thead>
         <tr>
