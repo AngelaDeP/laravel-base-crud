@@ -15,6 +15,7 @@
           <th scope="col">Type</th>
           <th scope="col">Price</th>
           <th scope="col">Description</th>
+          <th scope="col">Go to details</th>
         </tr>
       </thead>
       <tbody>
@@ -29,6 +30,9 @@
             <td>{{$comic->type}}</td>
             <td>{{$comic->price}}</td>
             <td>{{$comic->description}}</td>
+            <td>
+              <a href="{{route('comic.show', $comic->id )}}" class="btn btn-primary mt-4">Details</a>
+            </td>
           </tr>
         @endforeach
       </tbody>
