@@ -28,7 +28,11 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price</label>
-            <input type="number" class="form-control" id="price" name="price">
+            <input type="number" class="form-control" id="price" name="price" step="0.01">
+        </div>
+        <div class="mb-3">
+            <label for="sale_date" class="form-label">Sale date</label>
+            <input type="text" class="form-control" id="sale_date" name="sale_date">
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Describe it here!" id="description" name="description"></textarea>
@@ -36,7 +40,7 @@
         </div>
 
         <div class="d-grid gap-2 col-1 mx-auto mt-5">
-            <button class="btn btn-primary" type="button">Save</button>
+            <button class="btn btn-primary" type="submit">Save</button>
         </div>
     </form>
 
