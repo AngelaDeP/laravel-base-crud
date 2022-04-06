@@ -40,6 +40,7 @@
             <td>{{$comic->description}}</td>
             <td>
               <a href="{{route('comic.show', $comic->id )}}" class="btn btn-primary mt-4">Details</a>
+              <a href="{{route('comic.edit', $comic->id )}}" class="btn btn-warning mt-4">Edit</a>
             </td>
           </tr>
         @endforeach
